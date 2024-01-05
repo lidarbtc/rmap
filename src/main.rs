@@ -19,7 +19,7 @@ use scan::visit;
     name = "rmap",
     version = "0.1.0",
     author = "lidar. <lidarbtc@protonmail.com>",
-    about = "Fast http/https single host scanner for find original IP behind CDN",
+    about = "Fast http/https host scanner for find original IP behind CDN",
     long_about = None,
 )]
 struct Cli {
