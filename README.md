@@ -6,7 +6,7 @@
  <img src="https://img.shields.io/github/forks/lidarbtc/rmap?color=%239999FF&style=for-the-badge"/> &nbsp;
  <img src="https://img.shields.io/github/license/lidarbtc/ramp?color=%23E8E8E8&style=for-the-badge"/> &nbsp;
  
-Fast http/https single host scanner for find original IP behind CDN
+Fast http/https host scanner for find original IP behind CDN
 
 ## Language</br>
 
