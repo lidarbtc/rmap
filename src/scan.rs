@@ -3,8 +3,8 @@ use reqwest::{
     header::{HeaderMap, HeaderValue},
     Client,
 };
-use std::fs::OpenOptions;
 use std::io::Write;
+use std::{fs::OpenOptions, time::Duration};
 
 use crate::utils::hasher;
 
@@ -20,6 +20,7 @@ pub async fn visit(
 ) -> Result<bool, Box<dyn std::error::Error>> {
     let client = Client::builder()
         .danger_accept_invalid_certs(true)
+        .timeout(Duration::from_secs(10))
         .build()?;
 
     let mut headers = HeaderMap::new();
