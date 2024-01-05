@@ -31,7 +31,6 @@ cd rmap
 cargo build --release
 
 mv target/release/rmap .
-
 ```
 
 ## Example
@@ -40,6 +39,10 @@ mv target/release/rmap .
 Use command line : ./rmap <option>
       └──────────> ./rmap --help
 ```
+
+### Before scan with rmap
+
+Before starting the scan, use `masscan` or `zmap` to obtain a list of IP addresses with open ports 80 and 443. Use this list for scanning with `rmap`. This approach allows `rmap` to efficiently scan these IP addresses to find the original IP hidden behind a CDN.
 
 ## Help
 
