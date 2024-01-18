@@ -53,7 +53,7 @@ pub async fn visit(
         if text.contains(&trigger_word.unwrap()) {
             match output_path {
                 Some(path) => {
-                    let mut file = OpenOptions::new().append(true).open(path)?;
+                    let mut file = OpenOptions::new().create(true).append(true).open(path)?;
 
                     writeln!(file, "{}", ip)?;
                 }
