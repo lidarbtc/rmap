@@ -163,7 +163,7 @@ async fn main() -> io::Result<()> {
             let success = progress_for_timer_success.lock().await;
             let triggered = progress_for_timer_triggered.lock().await;
 
-            let process_percent = *success / total_tasks * 100;
+            let process_percent = (*success as f64 / total_tasks as f64 * 100.0) as u32;
             let total = *success;
             let average = *success / current_time;
             let f_total = *triggered;
