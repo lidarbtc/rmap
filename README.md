@@ -20,6 +20,7 @@ Fast http/https host scanner for find original IP behind CDN
 - Detect with word or favicon
 - Async
 - Fast
+- Cross platform
 
 ## Install on Unix like
 
